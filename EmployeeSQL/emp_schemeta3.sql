@@ -1,7 +1,7 @@
 --Create departments table
 
 CREATE TABLE departments (
-dept_no SERIAL PRIMARY KEY,
+dept_no varchar,
 dept_name varchar
 );
 	
