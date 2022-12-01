@@ -1,0 +1,27 @@
+Import 1st**
+departments= dept_no (4), dept_name (20)
+<dept_no = pk>
+
+Import 6th**
+dept_emp = emp_no (6), dept_no (4)
+NO PRIMARY KEYS DUE TO DUPLICATES
+<emp_no = fk> ref: employees.emp_no
+<dept_no = fk> ref: departments.dept_no
+
+Import 5th** (revisit if it doesnt work)
+dept_manager = dept_no (4), emp_no (6)
+<dept_no = fk> ref: departments.dept_no
+<emp_no = pk+fk> ref:employees.emp_no
+ 
+Import 3rd**
+employees = emp_no (6), emp_title (5), birth_date, first_name (20), last_name (20), sex (1), hire_date
+<emp_no = pk>
+<emp_title_id = fk> ref: titles.title_id
+
+Import 4th**
+salaries = emp_no (6), salary
+<emp_no = pk>
+
+Import 2nd**
+titles = title_id (5), title (20)
+<title_id = pk>
